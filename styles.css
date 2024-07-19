@@ -58,6 +58,7 @@ body {
   align-items: center;
   outline: none;
   border: none;
+  transition: 0.3s;
 }
 .demo-version__button p {
   text-wrap: nowrap;
@@ -213,6 +214,7 @@ body {
   font-weight: 500;
   margin-top: 24px;
   margin-bottom: 36px;
+  transition: 0.3s;
 }
 
 
@@ -232,6 +234,7 @@ body {
 .login-form__button--login {
   background: #2a579a;
   color: #fff;
+  transition: 0.3s;
 }
 
 .login-form__button--register {
@@ -239,6 +242,7 @@ body {
   color: #2a579a;
   border: 1px solid #2a579a;
   margin: 0;
+  transition: 0.3s;
 }
 
 @media (max-width: 1440px) {
@@ -321,4 +325,30 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
+  .modal__close{
+    transition: 0.3s;
+  }
+}
+@media (any-hover: hover) {
+  .demo-version__button:hover {
+    background-color: #003d80;
+  }
+  .login-form__link:hover {
+    text-decoration: underline;
+  }
+  .login-form__button--login:hover {
+    background: #1d3c6a;
+    
+  }
+  
+  .login-form__button--register:hover {
+    background: #e8e7e7;
+ 
+    
+    
+  }
+  .modal__close:hover{
+    background-color: #efefef;
+  }
+    
 }
