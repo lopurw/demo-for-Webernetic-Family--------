@@ -90,7 +90,7 @@ body {
   align-items: center;
 }
 .modal {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -217,7 +217,6 @@ body {
   transition: 0.3s;
 }
 
-
 .login-form__buttons {
   display: flex;
   flex-direction: column;
@@ -325,7 +324,7 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
-  .modal__close{
+  .modal__close {
     transition: 0.3s;
   }
 }
@@ -338,17 +337,12 @@ body {
   }
   .login-form__button--login:hover {
     background: #1d3c6a;
-    
   }
-  
+
   .login-form__button--register:hover {
     background: #e8e7e7;
- 
-    
-    
   }
-  .modal__close:hover{
+  .modal__close:hover {
     background-color: #efefef;
   }
-    
 }

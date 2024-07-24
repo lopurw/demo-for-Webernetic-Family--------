@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const openModalButton = document.getElementById("openModal");
-    const modal = document.getElementById("modal");
-    const modalOverlay = document.getElementById("modalOverlay");
-    const modalContent = document.getElementById("modalContent");
-  
-    openModalButton.addEventListener("click", () => {
-      modal.style.display = "flex";
-      modalContent.innerHTML = `
+  const openModalButton = document.getElementById("openModal");
+  const modal = document.getElementById("modal");
+  const modalOverlay = document.getElementById("modalOverlay");
+  const modalContent = document.getElementById("modalContent");
+
+  openModalButton.addEventListener("click", () => {
+    modal.style.display = "flex";
+    modalContent.innerHTML = `
         <div class="modal__close" id="modalClose"><img src="img/cross.svg" alt=""></div>
         <form class="login-form">
           <h2 class="login-form__title">Войти в систему</h2>
@@ -25,15 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         </form>
       `;
-  
-      const modalClose = document.getElementById("modalClose");
-      modalClose.addEventListener("click", () => {
-        modal.style.display = "none";
-      });
-    });
-  
-    modalOverlay.addEventListener("click", () => {
+
+    const modalClose = document.getElementById("modalClose");
+    modalClose.addEventListener("click", () => {
       modal.style.display = "none";
     });
   });
-  
+
+  modalOverlay.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+});
